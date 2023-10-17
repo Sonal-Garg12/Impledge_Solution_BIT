@@ -26,7 +26,7 @@ public class LongestCompoundedWord{
     }
     public static void main(String[] args) {
        // reading the list of words from the input file and storing them in an ArrayList called words
-        String inputFileName = "Input_02.txt";
+        String inputFileName = "Input_01.txt";
         List<String> words = new ArrayList<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFileName))) {
