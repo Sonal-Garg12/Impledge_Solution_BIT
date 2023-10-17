@@ -1,0 +1,33 @@
+# Language used to code - Java
+*description of the logic behind the code*:- 
+
+1.  Reading the list of words from the input file and storing them in an `ArrayList` called `words`.
+
+2.  The list of words is sorted by length in descending order and longer words are more likely to be compounded from shorter words, so we will check longer words first.
+
+3. Finding Longest and Second Longest Compounded Words using variable `longestCompound` and `secondLongestCompound`
+   and `HashSet` called `wordSet` . 
+   We iterate through the sorted list of words and check if it can be formed by combining other words using the `isCompound` method.
+   If the longest compound word has not been found i.e,`longestCompound == null` then current word is stored as the `longestCompound` and similar for second longest compounded word.
+   If both the longest and second longest words have been found then loop is terminated.
+
+4. The `isCompound` method is a recursive function that checks if a given word can be formed by combining         other words in the `set`. 
+   It tries to split the word into a prefix and a suffix at every possible position.
+   If the prefix and suffix is in the set OR compounded word itself  --> return true --> word is compounded
+   - This process continues until all possible splits are checked.
+
+5. Lastly, code prints the longest and second longest compounded words found and provide required output.
+
+*Steps to execute code*
+
+1. Install Java : setup runtime Environment -- Install IDE for java , install JDK, setup bin path 
+
+2. Write Code: Create and save Java code using file name `LongestCompoundedWord.java`
+
+3. Open Terminal/Command Prompt: Open your terminal or command prompt.
+
+4. Navigate: Go to the code's directory.
+
+5. Compilation: Use `javac LongestCompoundedWord.java`.
+
+6. Run: Execute it with `java LongestCompoundedWord`.
